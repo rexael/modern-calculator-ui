@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Hesap Makinesi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="app-wrapper">
+
+    <aside class="sidebar-nav">
+      <div class="sidebar-logo">
+        <h1>Hesap Makinesi</h1>
+      </div>
+
+      <nav class="sidebar-nav-links">
+        <p class="sidebar-section-label">Modlar</p>
+
+        <a class="sidebar-link active" href="#">
+          <span class="material-symbols-outlined">calculate</span>
+          <span>Standart</span>
+        </a>
+
+        <a class="sidebar-link inactive" href="#">
+          <span class="material-symbols-outlined">function</span>
+          <span>Bilimsel</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <a class="sidebar-link inactive" href="#">
+          <span class="material-symbols-outlined">history</span>
+          <span>Geçmiş</span>
+        </a>
+        <a class="sidebar-link inactive" href="#">
+          <span class="material-symbols-outlined">settings</span>
+          <span>Ayarlar</span>
+        </a>
+      </div>
+    </aside>
+
+    <main class="main-content">
+
+      <section class="calculator-section">
+
+        <header class="calc-header">
+          <div class="calc-header-title">Standart Mod</div>
+          <div class="calc-header-actions">
+            <button class="icon-btn" aria-label="Geçmiş">
+              <span class="material-symbols-outlined">history</span>
+            </button>
+            <button class="icon-btn" aria-label="Ayarlar">
+              <span class="material-symbols-outlined">settings</span>
+            </button>
+          </div>
+        </header>
+
+        <div class="display-area">
+          <div class="display-expression">1,250 × 4</div>
+          <div class="display-result">5,000</div>
+        </div>
+
+        <div class="keypad-wrapper">
+          <div class="keypad-grid">
+
+            <button class="btn btn-secondary">AC</button>
+            <button class="btn btn-secondary">+/-</button>
+            <button class="btn btn-secondary">%</button>
+            <button class="btn btn-primary">
+              <span class="material-symbols-outlined">horizontal_rule</span>
+            </button>
+
+            <button class="btn btn-number">7</button>
+            <button class="btn btn-number">8</button>
+            <button class="btn btn-number">9</button>
+            <button class="btn btn-primary">
+              <span class="material-symbols-outlined">close</span>
+            </button>
+
+            <button class="btn btn-number">4</button>
+            <button class="btn btn-number">5</button>
+            <button class="btn btn-number">6</button>
+            <button class="btn btn-primary">
+              <span class="material-symbols-outlined">remove</span>
+            </button>
+
+            <button class="btn btn-number">1</button>
+            <button class="btn btn-number">2</button>
+            <button class="btn btn-number">3</button>
+            <button class="btn btn-primary selected">
+              <span class="material-symbols-outlined">add</span>
+            </button>
+
+            <button class="btn-zero btn-number">0</button>
+            <button class="btn btn-number">,</button>
+            <button class="btn btn-primary">
+              <span class="material-symbols-outlined">equal</span>
+            </button>
+
+          </div>
+        </div>
+      </section>
+
+      <aside class="history-sidebar">
+        <div class="history-header">
+          <h2>Geçmiş</h2>
+        </div>
+
+        <div class="history-list custom-scroll">
+          <div class="history-item">
+            <div class="history-expression">250 + 1000</div>
+            <div class="history-value">1,250</div>
+          </div>
+          <div class="history-item">
+            <div class="history-expression">850 / 2</div>
+            <div class="history-value">425</div>
+          </div>
+          <div class="history-item">
+            <div class="history-expression">150 × 3</div>
+            <div class="history-value">450</div>
+          </div>
+
+          <div class="history-empty">
+            <span class="material-symbols-outlined">history</span>
+            <span>Eski işlemler burada görünür</span>
+          </div>
+        </div>
+
+        <div class="history-footer">
+          <button class="btn-clear-history">Geçmişi Temizle</button>
+        </div>
+      </aside>
+
+    </main>
+  </div>
+</body>
+
+</html>
